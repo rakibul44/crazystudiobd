@@ -1,0 +1,158 @@
+// font-style
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&display=swap');
+// font-family: 'Akaya Kanadaka', cursive;
+// font-family: 'Abril Fatface', cursive;
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-family: 'Akaya Kanadaka', cursive;
+}
+.header-area{
+    background-image: url(../images/research-4170441_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    .header-overlay{
+        background: rgba(45, 57, 80, 0.6);
+        padding: 15px 0;
+        .logo{
+            margin: 4px 0;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+            }
+            img{
+                width: 105px;
+                cursor: pointer;
+            }
+        }
+        .menu-icon{
+            display: none;
+        }
+        .menu{
+            margin: 8px 0;
+            z-index: 1;
+            ul{
+                list-style: none;
+                margin-bottom: 0%;
+                display: flex;
+                justify-content: flex-end;
+                text-transform: capitalize;
+                cursor: pointer;
+                li{
+                    a{
+                        color: #FCED49;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        padding: 10px 20px;
+                        display: block;
+                        font-size: 20px;
+                        font-family: 'Abril Fatface', cursive;
+                        &:hover{
+                            color: red;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.banner-area{
+    margin-top: 100px;
+    .banner-text{
+        padding-top: 100px;
+        h2{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p{
+            text-align: start;
+            text-transform: capitalize;
+            font-size: 18px;
+            padding-right: 60px;
+        }
+        
+    }
+    .banner-ph{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media(max-width: 991px){
+    .header-area{
+        position: relative;
+        .header-overlay{
+            background: rgba(45, 57, 80, 0.8);
+        .menu-icon{
+            display: flex;
+            justify-content: flex-end;
+            i{
+                color: rgb(238, 228, 228);
+                font-size: 25px;
+                padding: 10px;
+            }
+        }
+        .menu{
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            text-align: center;
+            background:#000;
+            opacity: 0.5;
+            width: 100%;
+            display: none;
+            margin: 0%;
+            
+            ul{
+                display: block;
+                padding: 0%;
+                li{
+                    a{
+                        color: #ffeaa7;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+        }
+    }
+    .banner-area{
+        margin: 15% 0;
+        padding: 0%;
+        .banner-text{
+            margin-bottom: 30px;
+            padding: 0%;
+            h2{
+                text-align: center;
+            }
+            h5{
+                text-align: center;
+            }
+            p{
+                text-align: start;
+                padding: 0%;
+            }
+            button{
+                background-color: #1fa2fa;
+                border: none;
+                margin:0 150px;
+            }
+        }
+        .banner-ph{
+            margin: 30px 0;
+            // img{}
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&display=swap");
+* {
+  margin: 0%;
+  padding: 0%; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  font-family: 'Akaya Kanadaka', cursive; }
+
+.header-area {
+  background-image: url(../images/research-4170441_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .header-area .header-overlay {
+    background: rgba(45, 57, 80, 0.6);
+    padding: 15px 0; }
+    .header-area .header-overlay .logo {
+      margin: 4px 0; }
+      .header-area .header-overlay .logo a {
+        text-decoration: none;
+        cursor: pointer; }
+      .header-area .header-overlay .logo img {
+        width: 105px;
+        cursor: pointer; }
+    .header-area .header-overlay .menu-icon {
+      display: none; }
+    .header-area .header-overlay .menu {
+      margin: 8px 0;
+      z-index: 1; }
+      .header-area .header-overlay .menu ul {
+        list-style: none;
+        margin-bottom: 0%;
+        display: flex;
+        justify-content: flex-end;
+        text-transform: capitalize;
+        cursor: pointer; }
+        .header-area .header-overlay .menu ul li a {
+          color: #FCED49;
+          text-decoration: none;
+          text-transform: capitalize;
+          padding: 10px 20px;
+          display: block;
+          font-size: 20px;
+          font-family: 'Abril Fatface', cursive; }
+          .header-area .header-overlay .menu ul li a:hover {
+            color: red;
+            transition: 0.4s; }
+
+.banner-area {
+  margin-top: 100px; }
+  .banner-area .banner-text {
+    padding-top: 100px; }
+    .banner-area .banner-text h2 {
+      text-transform: uppercase;
+      font-weight: bold; }
+    .banner-area .banner-text p {
+      text-align: start;
+      text-transform: capitalize;
+      font-size: 18px;
+      padding-right: 60px; }
+  .banner-area .banner-ph img {
+    width: 100%;
+    height: auto; }
+
+@media (max-width: 991px) {
+  .header-area {
+    position: relative; }
+    .header-area .header-overlay {
+      background: rgba(45, 57, 80, 0.8); }
+      .header-area .header-overlay .menu-icon {
+        display: flex;
+        justify-content: flex-end; }
+        .header-area .header-overlay .menu-icon i {
+          color: #eee4e4;
+          font-size: 25px;
+          padding: 10px; }
+      .header-area .header-overlay .menu {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        text-align: center;
+        background: #000;
+        opacity: 0.5;
+        width: 100%;
+        display: none;
+        margin: 0%; }
+        .header-area .header-overlay .menu ul {
+          display: block;
+          padding: 0%; }
+          .header-area .header-overlay .menu ul li a {
+            color: #ffeaa7;
+            transition: 0.2s; }
+  .banner-area {
+    margin: 15% 0;
+    padding: 0%; }
+    .banner-area .banner-text {
+      margin-bottom: 30px;
+      padding: 0%; }
+      .banner-area .banner-text h2 {
+        text-align: center; }
+      .banner-area .banner-text h5 {
+        text-align: center; }
+      .banner-area .banner-text p {
+        text-align: start;
+        padding: 0%; }
+      .banner-area .banner-text button {
+        background-color: #1fa2fa;
+        border: none;
+        margin: 0 150px; }
+    .banner-area .banner-ph {
+      margin: 30px 0; } }
