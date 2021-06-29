@@ -19,37 +19,6 @@ body {
   .header-area .header-overlay {
     background: rgba(45, 57, 80, 0.6);
     padding: 15px 0; }
-    .header-area .header-overlay .logo {
-      margin: 4px 0; }
-      .header-area .header-overlay .logo a {
-        text-decoration: none;
-        cursor: pointer; }
-      .header-area .header-overlay .logo img {
-        width: 105px;
-        cursor: pointer; }
-    .header-area .header-overlay .menu-icon {
-      display: none; }
-    .header-area .header-overlay .menu {
-      margin: 8px 0;
-      z-index: 1; }
-      .header-area .header-overlay .menu ul {
-        list-style: none;
-        margin-bottom: 0%;
-        display: flex;
-        justify-content: flex-end;
-        text-transform: capitalize;
-        cursor: pointer; }
-        .header-area .header-overlay .menu ul li a {
-          color: #FCED49;
-          text-decoration: none;
-          text-transform: capitalize;
-          padding: 10px 20px;
-          display: block;
-          font-size: 20px;
-          font-family: 'Abril Fatface', cursive; }
-          .header-area .header-overlay .menu ul li a:hover {
-            color: red;
-            transition: 0.4s; }
 
 .banner-area {
   margin-top: 100px; }
@@ -66,6 +35,17 @@ body {
   .banner-area .banner-ph img {
     width: 100%;
     height: auto; }
+
+.service-area {
+  margin: 100px 0; }
+  .service-area .service-text .text {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px; }
+  .service-area .service-text h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold; }
 
 @media (max-width: 991px) {
   .header-area {
@@ -113,4 +93,9 @@ body {
         border: none;
         margin: 0 150px; }
     .banner-area .banner-ph {
-      margin: 30px 0; } }
+      margin: 30px 0; }
+      .banner-area .banner-ph img {
+        width: 100%;
+        height: auto; }
+  .service-area .service-text .text {
+    font-size: 15px; } }
