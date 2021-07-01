@@ -2,16 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&display=swap');
 // font-family: 'Akaya Kanadaka', cursive;
 // font-family: 'Abril Fatface', cursive;
-
-*{
-    margin: 0%;
-    padding: 0%;
-}
 img{
     max-width: 100%;
     height: auto;
 }
 body{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);;
+    margin: 0%;
+    padding: 0%;
     font-family: 'Akaya Kanadaka', cursive;
 }
 .header-area{
@@ -21,7 +19,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     .header-overlay{
-        background: rgba(45, 57, 80, 0.6);
+        background: rgba(45, 57, 80, 0.7);
         padding: 15px 0;
         // .logo{
         //     margin: 4px 0;
@@ -64,8 +62,45 @@ body{
         //         }
         //     }
         // }
+        .navbar{
+            ul{
+                font-size: 30px;
+                margin-left: 20px;
+                li{
+                    a{
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
     }
 }
+
+.slide-area{
+    margin: 50px 0;
+    .owl-nav{
+        button.owl-prev{
+            display: none;
+        }
+        button.owl-next{
+            display: none;
+        }
+    }
+        .owl-dots{
+            text-align: center;
+            button.owl-dot{
+                width: 10px;
+                height: 10px;
+                background: #000000;
+                margin: 3px;
+                border-radius: 50%;
+            }
+            button.active{
+                background: rgb(255, 101, 101);
+            }
+        }
+    }
+
 .banner-area{
     margin-top: 100px;
     .banner-text{
@@ -90,7 +125,7 @@ body{
     }
 }
 .service-area{
-    margin: 100px 0;
+    margin-top: 170px;
     .service-text{
         .text{
             text-align: center;
@@ -104,41 +139,79 @@ body{
         }
         
     }
+    .service-content{
+        margin: 20px 0;
+        .card{
+            margin-top: 20px;
+            cursor: pointer;
+            box-shadow: -0px 0px 5px rgba(0,0,0,.7);
+            transition: 1s;
+            background-color: #33ccff;
+            // &:hover{}
+            img{
+                width: 110px;
+                height: auto;
+                margin: 0 auto;
+                padding: 15px;
+            }
+            // i{
+            //     font-size: 40px;
+            //     padding: 10px 0;
+            //     color: #fff;
+            //     text-align: center;
+            // }
+            .card-body{
+                .card-title{
+                    text-transform: capitalize;
+                }
+                .card-text{
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 991px){
     .header-area{
         position: relative;
         .header-overlay{
-            background: rgba(45, 57, 80, 0.8);
-        .menu-icon{
-            display: flex;
-            justify-content: flex-end;
-            i{
-                color: rgb(238, 228, 228);
-                font-size: 25px;
-                padding: 10px;
-            }
-        }
-        .menu{
-            position: absolute;
-            top: 100%;
-            left: 0%;
-            text-align: center;
-            background:#000;
-            opacity: 0.5;
-            width: 100%;
-            display: none;
-            margin: 0%;
+            background: rgba(45, 57, 80, 0.3);
+        // .menu-icon{
+        //     display: flex;
+        //     justify-content: flex-end;
+        //     i{
+        //         color: rgb(238, 228, 228);
+        //         font-size: 25px;
+        //         padding: 10px;
+        //     }
+        // }
+        // .menu{
+        //     position: absolute;
+        //     top: 100%;
+        //     left: 0%;
+        //     text-align: center;
+        //     background:#000;
+        //     opacity: 0.5;
+        //     width: 100%;
+        //     display: none;
+        //     margin: 0%;
             
-            ul{
-                display: block;
-                padding: 0%;
-                li{
-                    a{
-                        color: #ffeaa7;
-                        transition: 0.2s;
-                    }
+        //     ul{
+        //         display: block;
+        //         padding: 0%;
+        //         li{
+        //             a{
+        //                 color: #ffeaa7;
+        //                 transition: 0.2s;
+        //             }
+        //         }
+        //     }
+        // }
+        .navbar{
+            .navbar-nav{
+                .nav-item{
+                    text-align: center;
                 }
             }
         }
@@ -161,7 +234,7 @@ body{
                 padding: 0%;
             }
             button{
-                background-color: #1fa2fa;
+                background-color: #f17d91;
                 border: none;
                 margin:0 150px;
             }
@@ -175,9 +248,18 @@ body{
         }
     }
     .service-area{
+        margin-top: 0%;
         .service-text{
             .text{
                 font-size: 15px;
+            }
+        }
+        .service-content{
+            padding: 10px 0;
+            margin: 20px 0;
+            .card{
+                margin: 20px 0;
+                padding: 20px;
             }
         }
     }

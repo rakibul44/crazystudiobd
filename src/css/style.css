@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&display=swap");
-* {
-  margin: 0%;
-  padding: 0%; }
-
 img {
   max-width: 100%;
   height: auto; }
 
 body {
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  margin: 0%;
+  padding: 0%;
   font-family: 'Akaya Kanadaka', cursive; }
 
 .header-area {
@@ -17,8 +16,30 @@ body {
   background-attachment: fixed;
   background-size: cover; }
   .header-area .header-overlay {
-    background: rgba(45, 57, 80, 0.6);
+    background: rgba(45, 57, 80, 0.7);
     padding: 15px 0; }
+    .header-area .header-overlay .navbar ul {
+      font-size: 30px;
+      margin-left: 20px; }
+      .header-area .header-overlay .navbar ul li a {
+        padding-left: 20px; }
+
+.slide-area {
+  margin: 50px 0; }
+  .slide-area .owl-nav button.owl-prev {
+    display: none; }
+  .slide-area .owl-nav button.owl-next {
+    display: none; }
+  .slide-area .owl-dots {
+    text-align: center; }
+    .slide-area .owl-dots button.owl-dot {
+      width: 10px;
+      height: 10px;
+      background: #000000;
+      margin: 3px;
+      border-radius: 50%; }
+    .slide-area .owl-dots button.active {
+      background: #ff6565; }
 
 .banner-area {
   margin-top: 100px; }
@@ -37,7 +58,7 @@ body {
     height: auto; }
 
 .service-area {
-  margin: 100px 0; }
+  margin-top: 170px; }
   .service-area .service-text .text {
     text-align: center;
     text-transform: capitalize;
@@ -46,35 +67,31 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold; }
+  .service-area .service-content {
+    margin: 20px 0; }
+    .service-area .service-content .card {
+      margin-top: 20px;
+      cursor: pointer;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+      transition: 1s;
+      background-color: #33ccff; }
+      .service-area .service-content .card img {
+        width: 110px;
+        height: auto;
+        margin: 0 auto;
+        padding: 15px; }
+      .service-area .service-content .card .card-body .card-title {
+        text-transform: capitalize; }
+      .service-area .service-content .card .card-body .card-text {
+        text-transform: capitalize; }
 
 @media (max-width: 991px) {
   .header-area {
     position: relative; }
     .header-area .header-overlay {
-      background: rgba(45, 57, 80, 0.8); }
-      .header-area .header-overlay .menu-icon {
-        display: flex;
-        justify-content: flex-end; }
-        .header-area .header-overlay .menu-icon i {
-          color: #eee4e4;
-          font-size: 25px;
-          padding: 10px; }
-      .header-area .header-overlay .menu {
-        position: absolute;
-        top: 100%;
-        left: 0%;
-        text-align: center;
-        background: #000;
-        opacity: 0.5;
-        width: 100%;
-        display: none;
-        margin: 0%; }
-        .header-area .header-overlay .menu ul {
-          display: block;
-          padding: 0%; }
-          .header-area .header-overlay .menu ul li a {
-            color: #ffeaa7;
-            transition: 0.2s; }
+      background: rgba(45, 57, 80, 0.3); }
+      .header-area .header-overlay .navbar .navbar-nav .nav-item {
+        text-align: center; }
   .banner-area {
     margin: 15% 0;
     padding: 0%; }
@@ -89,7 +106,7 @@ body {
         text-align: start;
         padding: 0%; }
       .banner-area .banner-text button {
-        background-color: #1fa2fa;
+        background-color: #f17d91;
         border: none;
         margin: 0 150px; }
     .banner-area .banner-ph {
@@ -97,5 +114,13 @@ body {
       .banner-area .banner-ph img {
         width: 100%;
         height: auto; }
-  .service-area .service-text .text {
-    font-size: 15px; } }
+  .service-area {
+    margin-top: 0%; }
+    .service-area .service-text .text {
+      font-size: 15px; }
+    .service-area .service-content {
+      padding: 10px 0;
+      margin: 20px 0; }
+      .service-area .service-content .card {
+        margin: 20px 0;
+        padding: 20px; } }
