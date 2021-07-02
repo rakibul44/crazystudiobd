@@ -25,7 +25,7 @@ body {
         padding-left: 20px; }
 
 .slide-area {
-  margin: 50px 0; }
+  padding: 50px 0; }
   .slide-area .owl-nav button.owl-prev {
     display: none; }
   .slide-area .owl-nav button.owl-next {
@@ -85,6 +85,30 @@ body {
       .service-area .service-content .card .card-body .card-text {
         text-transform: capitalize; }
 
+.gallery-area {
+  margin-top: 150px; }
+  .gallery-area h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px; }
+  .gallery-area p {
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize; }
+  .gallery-area .gallery-button {
+    text-align: center;
+    padding: 20px 0; }
+    .gallery-area .gallery-button button {
+      margin: 0 15px;
+      border-style: none; }
+  .gallery-area .gallery-content {
+    padding: 35px 0; }
+    .gallery-area .gallery-content img {
+      margin-bottom: 30px; }
+  .gallery-area button.active-btn {
+    background-color: #fa5d5d;
+    color: #fff; }
+
 @media (max-width: 991px) {
   .header-area {
     position: relative; }
@@ -92,6 +116,9 @@ body {
       background: rgba(45, 57, 80, 0.3); }
       .header-area .header-overlay .navbar .navbar-nav .nav-item {
         text-align: center; }
+        .header-area .header-overlay .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+          text-align: center;
+          font-size: 20px; }
   .banner-area {
     margin: 15% 0;
     padding: 0%; }

@@ -14,7 +14,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="body">
     <!-- header-area -->
     <header class="header-area">
          <div class="header-overlay">
@@ -58,12 +58,12 @@
                       Services
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;text-align: center;">Photography</a></li>
-                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;text-align: center;">Photo Editing</a></li>
-                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;text-align: center;">Video Editing</a></li>
-                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;text-align: center;">Poster & Banner Design</a></li>
-                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;text-align: center;">logo Design</a></li>
-                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;text-align: center;"> website design </a></li>
+                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;">Photography</a></li>
+                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;">Photo Editing</a></li>
+                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;">Video Editing</a></li>
+                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;">Poster & Banner Design</a></li>
+                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;">logo Design</a></li>
+                      <li><a class="dropdown-item" href="#" style="color: #000; text-transform: uppercase;"> website design </a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -87,15 +87,12 @@
        <div class="slide-area">
         <div class="container">
             <div class="owl-carousel owl-theme slide-contant">
-                 <div class="item"> 
-                 <img src="./images/banner-01.png" alt="#"> 
+                 <div class="item">  
+                 <img src="./images/cs4.jpg" alt="cs_bd_photo"> 
                  </div>
                  <div class="item">  
-                 <img src="./images/banner-01.png" alt="#"> 
-                 </div>
-                 <div class="item">  
-                 <img src="./images/banner-01.png" alt="#">
-                 </div>
+                  <img src="./images/tttt.jpg" alt="cs_bd_photo"> 
+                  </div>
              </div> 
         </div>
     </div>
@@ -145,20 +142,20 @@
                        </div>
                        <div class="col-md-4">
                         <div class="card" style="width: 18rpm">
-                            <img src="./images/camera.png" class="card-img-top" alt="CS_BD_logo" >
+                            <img src="./images/logo-design.png" class="card-img-top" alt="CS_BD_logo" >
                             <!-- <i class="fas fa-camera"></i> -->
                             <div class="card-body">
-                              <h3 class="card-title" style="text-align: center;">Photography</h3>
+                              <h3 class="card-title" style="text-align: center;">logo Design</h3>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                           </div>
                        </div>
                        <div class="col-md-4">
                         <div class="card" style="width: 18rpm">
-                            <img src="./images/camera.png" class="card-img-top" alt="CS_BD_logo" >
+                            <img src="./images/videography.png" class="card-img-top" alt="CS_BD_logo" >
                             <!-- <i class="fas fa-camera"></i> -->
                             <div class="card-body">
-                              <h3 class="card-title" style="text-align: center;">Photography</h3>
+                              <h3 class="card-title" style="text-align: center;">logo Design</h3>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                           </div>
@@ -167,6 +164,47 @@
                </div>
             </div>
         </div>
+        <!-- service-area-end -->
+        <!-- gallery-area -->
+        <div class="gallery-area">
+          <h3>Gallery</h3>
+          <p>There is our some editing Photos</p>
+          <div class="container">
+              <div class="button-group filter-button-group gallery-button">
+                <button data-filter="*" class="btn btn-secondary active-btn">All Photos</button>
+               <!-- <button data-filter=".animal">Animal</button>
+               <button data-filter=".flower">Flowers</button> -->
+               <button data-filter=".edit" class="btn btn-secondary">Edits</button>
+                  
+              </div>
+              
+              <div class="gallery-content">
+                  <div class="row grid">
+                      <div class="col-md-3 grid-item edit">
+                          <img src="./images/cs2.jpg" alt="photo">
+                      </div>
+                      <div class="col-md-3 grid-item ">
+                        <img src="./images/CS4.jpg" alt="photo">
+                    </div>
+                    <div class="col-md-3 grid-item edit">
+                      <img src="./images/cs1.jpg" alt="photo">
+                        </div>
+                        <div class="col-md-3 grid-item edit">
+                          <img src="./images/cs1.jpg" alt="photo">
+                      </div>
+                      <div class="col-md-3 grid-item edit">
+                        <img src="./images/cs1.jpg" alt="photo">
+                    </div>
+                    <div class="col-md-3 grid-item edit">
+                      <img src="./images/cs1.jpg" alt="photo">
+                  </div>
+                  <div class="col-md-3 grid-item edit">
+                    <img src="./images/cs1.jpg" alt="photo">
+                </div>
+                </div>
+              </div>
+          </div>
+      </div>
 
 
 
@@ -174,6 +212,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- owl-carousel -->
     <script src="js/owl.carousel.min.js"></script>
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <!-- rippels -->
+    <script src="./Js/jquery.ripples-min.js"></script>
     <!-- bootstrap-js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- foontawesome -->
