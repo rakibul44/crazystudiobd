@@ -168,6 +168,30 @@ body {
       padding: 0 20px;
       cursor: pointer; }
 
+.top-arrow {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  background: #496783;
+  padding: 0px 15px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 1; }
+  .top-arrow:hover {
+    background: #0f1214;
+    cursor: pointer; }
+  .top-arrow i {
+    color: #fff;
+    font-size: 25px;
+    padding-top: 4px; }
+  .top-arrow p {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding-bottom: 0px; }
+
 .copy-right {
   text-align: center; }
   .copy-right span {
