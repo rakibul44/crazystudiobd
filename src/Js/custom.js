@@ -72,8 +72,8 @@
     
         // ripples 
     $('.body').ripples();
-    // ripples 
-    $('.header-overlay').ripples();
+    // // ripples
+    // $('contact-overlay').ripples();
     
     
 }) (jQuery);

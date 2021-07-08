@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
 img {
   max-width: 100%;
   height: auto; }
 
 body {
-  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  background: linear-gradient(to bottom, #33ccff, #ff99cc, #bad4df);
   margin: 0%;
   padding: 0%;
-  font-family: 'Akaya Kanadaka', cursive; }
+  font-family: 'Sora', sans-serif; }
 
 .header-area {
   background-image: url(../images/research-4170441_1920.jpg);
@@ -51,8 +51,13 @@ body {
     .banner-area .banner-text p {
       text-align: start;
       text-transform: capitalize;
-      font-size: 18px;
+      font-size: 20px;
+      font-weight: 500;
       padding-right: 60px; }
+    .banner-area .banner-text button a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: capitalize; }
   .banner-area .banner-ph img {
     width: 100%;
     height: auto; }
@@ -109,6 +114,65 @@ body {
     background-color: #fa5d5d;
     color: #fff; }
 
+.contact-area {
+  background-image: url(../images/cs4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 30px; }
+  .contact-area .contact-overlay {
+    background: rgba(75, 81, 90, 0.7);
+    padding: 80px 0; }
+  .contact-area .section-title {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 15px; }
+    .contact-area .section-title h2 {
+      color: #fff;
+      font-size: 40px; }
+    .contact-area .section-title p {
+      color: #fff; }
+  .contact-area input {
+    background: transparent; }
+  .contact-area textarea {
+    background: transparent; }
+  .contact-area ::placeholder {
+    color: #fff; }
+  .contact-area .form-footer {
+    display: flex;
+    justify-content: space-between; }
+    .contact-area .form-footer .ff-left label {
+      color: #fde6e6; }
+      .contact-area .form-footer .ff-left label a {
+        text-decoration: none;
+        color: #fde6e6; }
+
+.footer-area {
+  margin: 40px 0; }
+  .footer-area h5 {
+    font-size: 30px;
+    color: #fff; }
+  .footer-area h4 {
+    color: #fff; }
+  .footer-area span {
+    font-size: 40px;
+    text-align: center;
+    color: #fff; }
+    .footer-area span a {
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer; }
+    .footer-area span i {
+      color: #fff;
+      padding: 0 20px;
+      cursor: pointer; }
+
+.copy-right {
+  text-align: center; }
+  .copy-right span {
+    color: black; }
+
 @media (max-width: 991px) {
   .header-area {
     position: relative; }
@@ -124,7 +188,7 @@ body {
     padding: 0%; }
     .banner-area .banner-text {
       margin-bottom: 30px;
-      padding: 0%; }
+      padding: 0 15px; }
       .banner-area .banner-text h2 {
         text-align: center; }
       .banner-area .banner-text h5 {
@@ -135,7 +199,7 @@ body {
       .banner-area .banner-text button {
         background-color: #f17d91;
         border: none;
-        margin: 0 150px; }
+        margin: 0 145px; }
     .banner-area .banner-ph {
       margin: 30px 0; }
       .banner-area .banner-ph img {
@@ -150,4 +214,18 @@ body {
       margin: 20px 0; }
       .service-area .service-content .card {
         margin: 20px 0;
-        padding: 20px; } }
+        padding: 20px; }
+  .footer-area {
+    margin: 40px 0; }
+    .footer-area h5 {
+      font-size: 30px;
+      text-align: center; }
+    .footer-area h4 {
+      padding-top: 40px; }
+    .footer-area span {
+      font-size: 40px;
+      text-align: center; }
+      .footer-area span a {
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer; } }

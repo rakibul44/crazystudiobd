@@ -1,16 +1,15 @@
 // font-style
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&display=swap');
-// font-family: 'Akaya Kanadaka', cursive;
-// font-family: 'Abril Fatface', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+// font-family: 'Sora', sans-serif;
 img{
     max-width: 100%;
     height: auto;
 }
 body{
-    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);;
+    background: linear-gradient(to bottom, #33ccff , #ff99cc, #bad4df);
     margin: 0%;
     padding: 0%;
-    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'Sora', sans-serif;
 }
 .header-area{
     background-image: url(../images/research-4170441_1920.jpg);
@@ -113,8 +112,16 @@ body{
         p{
             text-align: start;
             text-transform: capitalize;
-            font-size: 18px;
+            font-size: 20px;
+            font-weight: 500;
             padding-right: 60px;
+        }
+        button{
+            a{
+                text-decoration: none;
+                color: #fff;
+                text-transform: capitalize;
+            }
         }
         
     }
@@ -204,6 +211,87 @@ body{
         color: #fff;
     }
 }
+// contact-area
+.contact-area{
+    background-image: url(../images/cs4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 30px ;
+    .contact-overlay{
+        background: rgba(75, 81, 90, 0.7);
+        padding: 80px 0;
+    }
+    .section-title{
+        text-align: center;
+        padding-top: 90px;
+        padding-bottom: 15px;
+        h2{
+            color: #fff;
+            font-size: 40px;
+        }
+        p{
+            color: #fff;
+        }
+    }
+    input{
+        background: transparent;
+        
+    }
+    textarea{
+        background: transparent;
+    }
+    ::placeholder{
+        color: #fff;
+    }
+    .form-footer{
+        display: flex;
+        justify-content: space-between;
+        .ff-left{
+            label{
+                color: rgb(253, 230, 230);
+                a{
+                    text-decoration: none;
+                    color: rgb(253, 230, 230);
+                }
+            }
+        }
+    }
+}
+// footer-area
+.footer-area{
+    margin: 40px 0;
+    h5{
+        font-size: 30px;
+        color: #fff;
+    }
+     h4{
+        color: #fff;
+     }
+    span{
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        a{
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+        i{
+            color: #fff;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        
+    }
+}
+.copy-right{
+    text-align: center;
+    span{
+        color: rgb(0, 0, 0);
+    }
+}
 
 @media(max-width: 991px){
     .header-area{
@@ -261,7 +349,7 @@ body{
         padding: 0%;
         .banner-text{
             margin-bottom: 30px;
-            padding: 0%;
+            padding: 0 15px;
             h2{
                 text-align: center;
             }
@@ -275,7 +363,7 @@ body{
             button{
                 background-color: #f17d91;
                 border: none;
-                margin:0 150px;
+                margin:0 145px;
             }
         }
         .banner-ph{
@@ -300,6 +388,29 @@ body{
                 margin: 20px 0;
                 padding: 20px;
             }
+        }
+    }
+    .footer-area{
+        margin: 40px 0;
+        
+        h5{
+            font-size: 30px;
+            text-align: center;
+           
+        }
+         h4{
+             padding-top: 40px;   
+             
+         }
+        span{
+            font-size: 40px;
+            text-align: center;
+            a{
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+            }
+            
         }
     }
 }
