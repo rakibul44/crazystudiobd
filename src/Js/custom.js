@@ -29,7 +29,7 @@
     
     $('.topatop').on('click', function(){
         $('html').animate({ scrollTop : 0 }, 2000)
-    })
+    });
     
      // isotope 
     
@@ -51,7 +51,8 @@
       $('.gallery-button button').on('click', function(){
         $('.gallery-button button').removeClass('active-btn');
         $(this).addClass('active-btn');
-    })
+    });
+
     //owlcarousel
     $('.slide-contant').owlCarousel({
         loop:true,
@@ -68,7 +69,7 @@
             1000:{
                 items:1
             }
-        } })
+        } });
     
         // ripples 
     $('.body').ripples();
@@ -88,6 +89,6 @@
     
     $('.top-arrow').on('click', function(){
         $('html').animate({ scrollTop : 0 })
-    }) 
+    });
     
 }) (jQuery);
